@@ -1,5 +1,4 @@
-// Text Adventure Game
-
+// TEXT ADVENTURE GAME
 const enter = "Please enter 1 or 2 for your answer";
 const gameOver = "Sorry GAME OVER!";
 const start = `Welcome to the Ghostbusters Text Adventure Game. Click 'OK' to start the game.`;
@@ -34,3 +33,38 @@ OR
 ${enter}`;
 const gameOver5 = `You looked at the trap and the light BLINDED YOU! ${gameOver}`;
 const win = `The ghost trap sucked Slimer in and closed. CONGRATULATIONS! YOU CAUGHT SLIMER!!!`;
+// Alerts the user to start the game
+alert(start);
+// Sets the value of userInput to the number the user enters
+let userInput = prompt(q1);
+// 1st Conditional Statement
+if (userInput == 1) {
+userInput = prompt(q2);
+if (userInput == 1) {
+    userInput = prompt(q3);
+    if (userInput == 2) {
+        prompt(q4);
+        if (userInput == 1) {
+            prompt(q5);
+            if (userInput == 2) {
+                alert(win);
+            } else {
+                alert(gameOver5)
+            }
+        } else {
+            alert(gameOver4);
+        }
+    } else {
+        alert(gameOver3);
+    }
+} else {
+    alert(gameOver2);
+}
+} else {
+    alert(gameOver1);
+}
+
+
+
+
+
